@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Google Calendar",
+        "description": "Organize sua agenda, crie eventos e compartilhe calendários com sua equipe.",
+        "image_url": "assets/imagens/calendar.jpg",
+        "page_url": "pages/calendar.html"
+    },
+    {
+        "title": "Google Meet",
+        "description": "Realize videoconferências seguras e de alta qualidade de qualquer lugar.",
+        "image_url": "assets/imagens/meet.jpg",
+        "page_url": "pages/meet.html"
+    },
+    {
+        "title": "Google Chat",
+        "description": "Comunicação instantânea e colaborativa para equipes ágeis e eficientes.",
+        "image_url": "assets/imagens/chat.jpg",
+        "page_url": "pages/chat.html"
+    },
+    {
+        "title": "Gmail",
+        "description": "Gerencie seus e-mails de forma inteligente, segura e integrada.",
+        "image_url": "assets/imagens/gmail.jpg",
+        "page_url": "pages/gmail.html"
+    }
+]

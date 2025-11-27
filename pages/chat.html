@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento Google Chat</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1><a href="../index.html" style="text-decoration: none; color: inherit;">Treinamento Google Workspace</a></h1>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <a href="../index.html" class="btn-back">‹ Voltar</a>
+            <h2>Google Chat: Comunicação ágil, decisões rápidas.</h2>
+
+            <!-- Video Placeholder Section -->
+            <div class="video-container-placeholder">
+                <div class="video-placeholder-content">
+                    <span>▶️ Treinamento em Vídeo (Em Breve)</span>
+                </div>
+            </div>
+
+            <p>Muitas vezes confundido com o antigo "Hangouts", o Google Chat é a ferramenta moderna de mensagens de texto instantâneas, focada tanto em conversas rápidas (1 para 1) quanto em discussões de grupo, tudo integrado ao Gmail.</p>
+
+            <h3 class="content-title">1. Comunicação Ágil e Flexível</h3>
+            <ul>
+                <li><strong>Mensagens Diretas (DM) e Grupos:</strong> Você pode conversar com apenas uma pessoa ou criar grupos rápidos (ex: "Almoço Equipe") para conversas informais.</li>
+                <li><strong>Edição de Mensagens:</strong> Errou ao digitar? Diferente de e-mails, no Chat você pode editar ou excluir uma mensagem depois que ela foi enviada.</li>
+                <li><strong>Rich Text e Mídia:</strong> Permite formatar o texto (negrito, itálico, tachado), usar listas, além de enviar GIFs, emojis e reações rápidas às mensagens de colegas.</li>
+            </ul>
+
+            <h3 class="content-title">2. Integração com o Workspace (O Grande Diferencial)</h3>
+            <ul>
+                <li><strong>Compartilhamento Inteligente:</strong> Ao colar um link de um arquivo do Google Drive (Docs, Sheets, Slides) no chat, o sistema verifica automaticamente se a outra pessoa tem permissão para ver. Se não tiver, ele sugere conceder o acesso na hora.</li>
+                <li><strong>Status Sincronizado com Agenda:</strong> Se você tem uma reunião marcada no Google Agenda, o seu status no Chat muda automaticamente para "Em reunião" ou "Não perturbe", avisando aos colegas que você não pode responder agora.</li>
+                <li><strong>Início Rápido de Reunião:</strong> Existe um atalho direto para criar um link do Google Meet dentro da conversa, transformando o texto em vídeo em segundos.</li>
+            </ul>
+
+            <h3 class="content-title">3. Organização e Foco</h3>
+            <ul>
+                <li><strong>Fixar Conversas (Pin):</strong> Você pode fixar as conversas mais importantes (como a do seu chefe ou do seu projeto principal) no topo da lista para acesso rápido.</li>
+                <li><strong>Filtro de Notificações:</strong> É possível configurar notificações específicas para cada conversa: "Sempre notificar", "Apenas menções (@)" ou "Silenciar".</li>
+                <li><strong>Encaminhar para Caixa de Entrada:</strong> Se alguém te mandar uma tarefa importante pelo Chat e você não puder fazer na hora, pode "Encaminhar para a Caixa de Entrada" do Gmail, transformando aquela mensagem em um e-mail para lembrar depois.</li>
+            </ul>
+
+            <h3 class="content-title">4. Busca Poderosa</h3>
+            <ul>
+                <li><strong>Pesquisa Integrada:</strong> Assim como no Gmail, a barra de busca localiza mensagens antigas, arquivos ou links compartilhados há meses, tanto em conversas privadas quanto em grupos.</li>
+            </ul>
+
+            <h3 class="content-title">Dica para o seu Site: "Google Chat vs. WhatsApp"</h3>
+            <p>Para quem está aprendendo, a comparação ajuda muito:</p>
+            <ul>
+                <li><strong>WhatsApp:</strong> É ótimo para o dia a dia pessoal, mas mistura trabalho com vida privada e os arquivos ocupam espaço no celular.</li>
+                <li><strong>Google Chat:</strong> É focado no profissional/estudos.</li>
+                <li><strong>Vantagem:</strong> Tudo fica na nuvem (não enche a memória do celular).</li>
+                <li><strong>Vantagem:</strong> Você não precisa passar seu número de telefone pessoal para colegas de trabalho ou faculdade; basta o e-mail.</li>
+            </ul>
+
+            <p><strong>Nota:</strong> Vale lembrar no site que o Google Chat é onde acontecem as conversas, e os Spaces (que vimos antes) são "salas" organizadas dentro do Google Chat. Eles são partes do mesmo aplicativo.</p>
+            <br>
+            <a href="../index.html" class="btn-back">‹ Voltar</a>
+        </div>
+    </main>
+
+    <button id="openChat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <div id="chatBox" style="display:none; position:fixed; bottom:20px; right:20px; background:white; width:350px; height:420px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2); padding:10px; flex-direction:column;">
+      <div style="display:flex; justify-content:space-between; align-items:center; padding-bottom:10px; border-bottom:1px solid #ccc;">
+        <h3 style="margin:0;">Chat com IA</h3>
+        <button id="closeChat" style="border:none; background:none; font-size:20px; cursor:pointer;">&times;</button>
+      </div>
+      <div id="messages" style="flex:1; overflow-y:auto; padding-top:10px;"></div>
+      <div style="display:flex; padding-top:10px;">
+        <textarea id="userInput" placeholder="Digite sua dúvida..." style="width:100%; height:45px; border-radius:5px 0 0 5px;"></textarea>
+        <button id="sendBtn" style="width:50px; border-radius:0 5px 5px 0; border:1px solid #ccc; background:#f0f0f0; cursor:pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="../assets/chat.js"></script>
+    <script src="../assets/script.js"></script>
+    <footer class="main-footer">
+        <div class="container">
+            <p>Desenvolvido por Manuela dos Santos Leite</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/manuela-leite-1318691a3" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/Devcode2-web" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="mailto:manuelaleite.ciber@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

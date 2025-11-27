@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento Google Calendar</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <main class="page-content container">
+    <a href="../index.html" class="btn-back">← Voltar</a>
+    <h2 class="text-center">Treinamento Google Calendar</h2>
+
+    <div id="video-cards" class="cards-grid"></div>
+
+    <h3 style="margin-top:30px;">Vídeo selecionado:</h3>
+
+    <div id="player" class="video-container-placeholder">
+      <div class="video-placeholder-content">Selecione um vídeo acima</div>
+    </div>
+  </main>
+
+<script>
+async function loadVideos() {
+  console.log("Carregando JSON...");
+
+  const response = await fetch("../assets/calendar-dados.json");
+  const data = await response.json();
+
+  const container = document.getElementById("video-cards");
+  container.innerHTML = "";
+
+  data.calendar.forEach(item => {
+    const card = document.createElement("div");
+    card.classList.add("video-card");
+
+    card.innerHTML = `
+      <h4>${item.title}</h4>
+      <button class="play-btn">▶ Assistir</button>
+    `;
+
+    card.addEventListener("click", () => {
+      document.getElementById("player").innerHTML =
+        `<video width="100%" height="100%" controls autoplay style="border-radius:10px; object-fit:cover;">
+          <source src="${item.videoUrl}" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+         </video>`;
+    });
+
+    container.appendChild(card);
+  });
+}
+
+loadVideos();
+</script>
+
+
+</body>
+</html>

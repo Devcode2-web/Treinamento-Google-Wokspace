@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento Gmail Corporativo</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1><a href="../index.html" style="text-decoration: none; color: inherit;">Treinamento Google Workspace</a></h1>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <a href="../index.html" class="btn-back">‹ Voltar</a>
+            <h2>Gmail Corporativo: Sua caixa de entrada como centro de produtividade.</h2>
+
+            <!-- Video Placeholder Section -->
+            <div class="video-container-placeholder">
+                <div class="video-placeholder-content">
+                    <span>▶️ Treinamento em Vídeo (Em Breve)</span>
+                </div>
+            </div>
+
+            <h3 class="content-title">1. Organização da Caixa de Entrada</h3>
+            <ul>
+                <li><strong>Categorias Automáticas:</strong> O Gmail filtra automaticamente seus e-mails em abas: "Principal" (pessoal), "Promoções" (marketing), "Social" (redes sociais) e "Atualizações" (notificações). Isso mantém a caixa principal limpa.</li>
+                <li><strong>Marcadores (Labels):</strong> Diferente de pastas tradicionais onde um e-mail só pode estar em um lugar, no Gmail você usa "etiquetas". Um mesmo e-mail pode ter as etiquetas "Projeto A", "Urgente" e "Financeiro" ao mesmo tempo.</li>
+                <li><strong>Adiar (Snooze):</strong> Se você receber um e-mail importante mas não puder lidar com ele agora, pode "adiar" a mensagem. Ela some da caixa de entrada e volta ao topo na data e hora que você escolher (como um despertador).</li>
+            </ul>
+
+            <h3 class="content-title">2. Composição e Envio Inteligente</h3>
+            <ul>
+                <li><strong>Smart Compose (Escrita Inteligente):</strong> O Gmail sugere frases completas enquanto você digita (em cinza claro). Basta apertar a tecla "Tab" para aceitar a sugestão e escrever mais rápido.</li>
+                <li><strong>Agendar Envio:</strong> Você pode escrever um e-mail à noite, mas programá-lo para ser enviado apenas às 8h da manhã do dia seguinte, para não incomodar o destinatário fora do horário comercial.</li>
+                <li><strong>Cancelar Envio:</strong> Logo após enviar um e-mail, aparece uma barra com a opção "Desfazer" por alguns segundos (configurável até 30s). Salva a vida se você esqueceu o anexo ou viu um erro de digitação no último segundo!</li>
+            </ul>
+
+            <h3 class="content-title">3. Busca e Histórico</h3>
+            <ul>
+                <li><strong>Pesquisa Google no E-mail:</strong> A barra de busca do Gmail é extremamente potente. Você pode filtrar por remetente (from:maria), por anexo (has:attachment), por data ou palavras-chave específicas.</li>
+                <li><strong>Filtros Automatizados:</strong> É possível criar regras do tipo "Sempre que chegar e-mail do chefe, marque com estrela e aplique a etiqueta Trabalho".</li>
+            </ul>
+
+            <h3 class="content-title">4. Integrações na Barra Lateral</h3>
+            <ul>
+                <li><strong>Painel Lateral:</strong> Sem sair do e-mail, você tem acesso rápido à Agenda, ao Keep (notas rápidas) e ao Tasks (tarefas).</li>
+                <li><strong>Exemplo:</strong> Você pode arrastar um e-mail para dentro do painel do Tasks para transformá-lo automaticamente em uma tarefa pendente.</li>
+                <li><strong>Chat e Meet Integrados:</strong> Você pode iniciar conversas de texto ou videochamadas diretamente da interface do Gmail, sem abrir outra aba.</li>
+            </ul>
+
+            <h3 class="content-title">5. Segurança e Proteção (Ponto Forte)</h3>
+            <ul>
+                <li><strong>Filtro de Spam e Phishing:</strong> O Gmail bloqueia mais de 99,9% de spam, malware e links perigosos antes que eles cheguem à sua caixa de entrada principal.</li>
+                <li><strong>Modo Confidencial:</strong> Permite enviar e-mails que se autodestroem após um tempo (1 dia, 1 semana, etc.) e que não podem ser encaminhados, copiados, impressos ou baixados pelo destinatário. Você pode até exigir uma senha por SMS para abrir o e-mail.</li>
+            </ul>
+
+            <h3 class="content-title">6. Funcionalidades Avançadas (Workspace/Empresarial)</h3>
+            <ul>
+                <li><strong>E-mail Personalizado:</strong> Uso do domínio da empresa (ex: voce@suaempresa.com) em vez de @gmail.com.</li>
+                <li><strong>Delegação de E-mail:</strong> Permite que outra pessoa (como uma secretária ou assistente) acesse sua conta para ler, enviar e apagar mensagens em seu nome, sem precisar da sua senha.</li>
+            </ul>
+            <br>
+            <a href="../index.html" class="btn-back">‹ Voltar</a>
+        </div>
+    </main>
+
+    <button id="openChat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <div id="chatBox" style="display:none; position:fixed; bottom:20px; right:20px; background:white; width:350px; height:420px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2); padding:10px; flex-direction:column;">
+      <div style="display:flex; justify-content:space-between; align-items:center; padding-bottom:10px; border-bottom:1px solid #ccc;">
+        <h3 style="margin:0;">Chat com IA</h3>
+        <button id="closeChat" style="border:none; background:none; font-size:20px; cursor:pointer;">&times;</button>
+      </div>
+      <div id="messages" style="flex:1; overflow-y:auto; padding-top:10px;"></div>
+      <div style="display:flex; padding-top:10px;">
+        <textarea id="userInput" placeholder="Digite sua dúvida..." style="width:100%; height:45px; border-radius:5px 0 0 5px;"></textarea>
+        <button id="sendBtn" style="width:50px; border-radius:0 5px 5px 0; border:1px solid #ccc; background:#f0f0f0; cursor:pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="../assets/chat.js"></script>
+    <script src="../assets/script.js"></script>
+    <footer class="main-footer">
+        <div class="container">
+            <p>Desenvolvido por Manuela dos Santos Leite</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/manuela-leite-1318691a3" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/Devcode2-web" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="mailto:manuelaleite.ciber@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

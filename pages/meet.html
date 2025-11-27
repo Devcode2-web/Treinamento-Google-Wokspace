@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento Google Meet</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1><a href="../index.html" style="text-decoration: none; color: inherit;">Treinamento Google Workspace</a></h1>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <a href="../index.html" class="btn-back">‹ Voltar</a>
+            <h2>Google Meet: Conecte equipes, encurte distâncias.</h2>
+
+            <!-- Video Placeholder Section -->
+            <div class="video-container-placeholder">
+                <div class="video-placeholder-content">
+                    <span>▶️ Treinamento em Vídeo (Em Breve)</span>
+                </div>
+            </div>
+
+            <h3 class="content-title">1. Comunicação de Áudio e Vídeo</h3>
+            <ul>
+                <li><strong>Acesso Simplificado:</strong> Não é necessário instalar programas no computador; ele roda diretamente no navegador (Chrome, Edge, Safari). No celular, usa-se o aplicativo dedicado.</li>
+                <li><strong>Legendas Instantâneas:</strong> O Meet consegue transcrever o que está sendo dito em tempo real (legendas automáticas), o que é ótimo para acessibilidade ou ambientes barulhentos.</li>
+                <li><strong>Ajuste de Luz e Vídeo:</strong> O sistema ajusta automaticamente o brilho da sua câmera se o ambiente estiver escuro e oferece filtros ou fundos virtuais (desfoque, imagens de escritório, praias) para esconder a bagunça atrás de você.</li>
+            </ul>
+
+            <h3 class="content-title">2. Ferramentas de Apresentação</h3>
+            <ul>
+                <li><strong>Compartilhamento de Tela:</strong> Você pode apresentar a tela inteira do seu computador, apenas uma janela específica ou, o que é melhor para vídeos, apenas uma "Guia do Chrome" (que compartilha o áudio do vídeo com alta qualidade).</li>
+                <li><strong>Modo Companion (Acompanhante):</strong> Se você estiver em uma sala de reunião presencial com outras pessoas, pode usar o celular ou notebook como uma "segunda tela" para mandar reações ou chat, sem dar microfonia (eco) no áudio da sala.</li>
+            </ul>
+
+            <h3 class="content-title">3. Interatividade e Colaboração</h3>
+            <ul>
+                <li><strong>Chat Integrado:</strong> Espaço para enviar links e textos durante a reunião sem interromper quem está falando.</li>
+                <li><strong>Levantar a Mão:</strong> Um botão virtual que sinaliza ao organizador que você quer falar. O Meet organiza automaticamente uma "fila" de quem levantou a mão primeiro.</li>
+                <li><strong>Reações com Emojis:</strong> Os participantes podem soltar emojis (corações, palmas, joia) que flutuam na tela, permitindo feedback visual instantâneo.</li>
+                <li><strong>Quadro Branco (Whiteboarding):</strong> Integração com ferramentas de lousa digital para desenhar ou fazer esquemas visuais em tempo real durante a aula ou reunião.</li>
+            </ul>
+
+            <h3 class="content-title">4. Controles do Organizador (Segurança)</h3>
+            <ul>
+                <li><strong>Gerenciamento de Anfitrião:</strong> O criador da reunião tem poderes especiais: pode silenciar o microfone de todos, remover participantes indesejados ou desativar o chat se a conversa sair do controle.</li>
+                <li><strong>Salas de Espera:</strong> Pessoas que não foram convidadas diretamente (ou que não são da sua empresa/escola) precisam "pedir para participar". O organizador decide se aceita ou nega a entrada.</li>
+            </ul>
+
+            <h3 class="content-title">5. Recursos Avançados (Versões Pagas/Workspace)</h3>
+            <p>Importante destacar no seu site que estes variam conforme o plano:</p>
+            <ul>
+                <li><strong>Gravação da Reunião:</strong> Permite gravar o vídeo e o chat, salvando tudo automaticamente no Google Drive do organizador.</li>
+                <li><strong>Enquetes e Perguntas e Respostas (Q&A):</strong> Ferramentas para lançar votações ou abrir uma área separada para perguntas, ideal para grandes webinars.</li>
+                <li><strong>Salas Temáticas (Breakout Rooms):</strong> O professor ou líder pode dividir a chamada principal em várias "salinhas" menores para trabalhos em grupo e depois trazer todos de volta.</li>
+                <li><strong>Cancelamento de Ruído:</strong> Inteligência artificial que remove barulhos de fundo (latido de cachorro, obras, teclado) e deixa apenas a voz da pessoa.</li>
+            </ul>
+            <br>
+            <a href="../index.html" class="btn-back">‹ Voltar</a>
+        </div>
+    </main>
+
+    <button id="openChat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <div id="chatBox" style="display:none; position:fixed; bottom:20px; right:20px; background:white; width:350px; height:420px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2); padding:10px; flex-direction:column;">
+      <div style="display:flex; justify-content:space-between; align-items:center; padding-bottom:10px; border-bottom:1px solid #ccc;">
+        <h3 style="margin:0;">Chat com IA</h3>
+        <button id="closeChat" style="border:none; background:none; font-size:20px; cursor:pointer;">&times;</button>
+      </div>
+      <div id="messages" style="flex:1; overflow-y:auto; padding-top:10px;"></div>
+      <div style="display:flex; padding-top:10px;">
+        <textarea id="userInput" placeholder="Digite sua dúvida..." style="width:100%; height:45px; border-radius:5px 0 0 5px;"></textarea>
+        <button id="sendBtn" style="width:50px; border-radius:0 5px 5px 0; border:1px solid #ccc; background:#f0f0f0; cursor:pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="../assets/chat.js"></script>
+    <script src="../assets/script.js"></script>
+    <footer class="main-footer">
+        <div class="container">
+            <p>Desenvolvido por Manuela dos Santos Leite</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/manuela-leite-1318691a3" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/Devcode2-web" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="mailto:manuelaleite.ciber@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

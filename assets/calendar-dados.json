@@ -1,0 +1,16 @@
+{
+  "calendar": [
+    { "id":1, "title":"Apresentação do aplicativo e interface", "videoUrl":"../assets/videos/introducao.mp4" },
+    { "id":2, "title":"Configurações", "videoUrl":"../assets/videos/configuracao.mp4" },
+    { "id":3, "title":"Criando um evento simples", "videoUrl":"../assets/videos/eventosimples.mp4" },
+    { "id":4, "title":"Criando um compromisso recorrente", "videoUrl":"../assets/videos/video4.mp4" },
+    { "id":5, "title":"Criando uma reunião", "videoUrl":"../assets/videos/video5.mp4" },
+    { "id":6, "title":"Excluindo compromissos", "videoUrl":"../assets/videos/video6.mp4" },
+    { "id":7, "title":"Convidados por link", "videoUrl":"../assets/videos/video7.mp4" },
+    { "id":8, "title":"Alterando visualização do calendário", "videoUrl":"../assets/videos/video8.mp4" },
+    { "id":9, "title":"Personalizando compromissos com emojis", "videoUrl":"../assets/videos/video9.mp4" },
+    { "id":10, "title":"Criando tarefas", "videoUrl":"../assets/videos/video10.mp4" },
+    { "id":11, "title":"Agendamento de horários", "videoUrl":"../assets/videos/video11.mp4" },
+    { "id":12, "title":"Imprimindo compromissos", "videoUrl":"../assets/videos/video12.mp4" }
+  ]
+}

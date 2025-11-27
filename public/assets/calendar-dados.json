@@ -1,0 +1,64 @@
+{
+  "calendar": [
+    {
+      "id": 1,
+      "title": "Apresentação do aplicativo e interface",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 2,
+      "title": "Configurações",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 3,
+      "title": "Criando um evento simples",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 4,
+      "title": "Criando um compromisso recorrente",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 5,
+      "title": "Criando uma reunião",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 6,
+      "title": "Excluindo compromissos",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 7,
+      "title": "Organizando sua vida",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 8,
+      "title": "Alterando visualização do calendário",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 9,
+      "title": "Personalizando compromissos com emojis",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 10,
+      "title": "Criando tarefas",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 11,
+      "title": "Agendamento de horários",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 12,
+      "title": "Imprimindo compromissos",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    }
+  ]
+}
