@@ -1,54 +1,55 @@
-# Treinamento Google Workspace
+# 📚 Treinamento Google Workspace
 
-Este projeto é um site de treinamento para o Google Workspace com um chatbot integrado que usa a API do Gemini para responder a perguntas.
+Este projeto foi desenvolvido com o objetivo de oferecer um treinamento interativo e acessível sobre as principais ferramentas do **Google Workspace**, incluindo **Google Agenda, Gmail e Google Meet**, com conteúdo didático e interface intuitiva.
 
-## Funcionalidades
+O site contém explicações, vídeos tutoriais e agora conta com uma **IA de suporte integrada**, permitindo que o usuário tire dúvidas em tempo real sobre as funcionalidades das ferramentas.
 
--   **Frontend:** Um site estático com informações sobre o treinamento do Google Workspace.
--   **Backend:** Um servidor Node.js com Express que fornece um endpoint `/chat`.
--   **Chatbot:** Um chatbot que usa a API do Gemini para responder a perguntas com base em uma base de conhecimento.
+---
 
-## Configuração do Projeto
+## 🚧 Status do Projeto
 
-### Pré-requisitos
+🔨 **Projeto em desenvolvimento**  
+O site ainda está em edição e melhoria contínua. Novas funcionalidades estão sendo implementadas, incluindo login administrativo, dashboard de controle, hospedagem do backend e expansão da base de conhecimento da IA.  
+Alguns recursos podem estar temporariamente instáveis enquanto evoluímos para as próximas versões.
 
--   [Node.js](https://nodejs.org/) (versão 14 ou superior)
--   Um editor de código (por exemplo, [Visual Studio Code](https://code.visualstudio.com/))
+Se desejar acompanhar ou contribuir, fique à vontade!
 
-### Instalação
+---
 
-1.  **Clone o repositório:**
+## 🚀 Funcionalidades
 
-    ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
-    ```
+- Página moderna e responsiva
+- Cards interativos com conteúdos e vídeos explicativos
+- Área de navegação intuitiva
+- Chat de suporte com IA (Gemini / Google Generative AI)
+- Base de conhecimento personalizada
+- Design profissional e amigável
 
-2.  **Instale as dependências:**
+---
 
-    ```bash
-    npm install
-    ```
+## 🧠 IA integrada
 
-3.  **Configure as variáveis de ambiente:**
+O chat inteligente permite ao usuário fazer perguntas sobre:
+- Como utilizar o Google Meet
+- Como criar eventos no Google Agenda
+- Como organizar e-mails no Gmail
+- Dicas e boas práticas
 
-    -   Crie um arquivo chamado `.env` na raiz do projeto.
-    -   Adicione sua chave da API do Gemini ao arquivo `.env`:
+🔌 A IA utiliza a API do **Google Gemini** e um backend Node.js para gerar respostas personalizadas.
 
-        ```
-        GEMINI_API_KEY=sua_chave_de_api_aqui
-        ```
+---
 
-### Executando o Projeto
+## 🛠 Tecnologias Utilizadas
 
-1.  **Inicie o servidor:**
+| Tecnologia | Função |
+|------------|--------|
+| HTML5 / CSS3 / JavaScript | Estrutura e interatividade |
+| Node.js + Express | Backend |
+| Google Generative AI (Gemini) | Respostas inteligentes |
+| CORS / Fetch API | Comunicação frontend ↔ backend |
+| GitHub Pages | Hospedagem do site |
 
-    ```bash
-    npm start
-    ```
+---
 
-    O servidor estará rodando em `http://localhost:8080`.
+## 📁 Estrutura do Projeto
 
-2.  **Abra o site:**
-
-    Abra o arquivo `index.html` em seu navegador para interagir com o site e o chatbot.
